@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="base" template="/test/tiles/layout.jsp">
+		<put-attribute name="title" value="Tiles Showcase" />
+		<put-attribute name="header"
+			value="/test/tiles/header.jsp" />
+		<put-attribute name="body" value="/test/tiles/body.jsp" />
+		<put-attribute name="footer"
+			value="/test/tiles/footer.jsp" />
+	</definition>
+
+	
+
+	<definition name="logout" extends="base">
+		<put-attribute name="title" value="Salida del Sistema" />
+		<put-attribute name="body"
+			value="../seguridad/logout.action" />
+	</definition>
+
+
+	
+	<definition name="entrada" extends="base">
+		<put-attribute name="title" value="Ingreso al Sistema" />
+		<put-attribute name="body"
+			value="/test/tiles/welcome.jsp" />
+	</definition>
+
+	<definition name="initentrada" extends="base">
+		<put-attribute name="title" value="Ingreso al Sistema" />
+		<put-attribute name="body"
+			value="/test/pages/login/loginc.jsp" />
+	</definition>
+
+	<definition name="recarga" extends="base">
+		<put-attribute name="title" value="Ingreso al Sistema" />
+		<put-attribute name="body"
+			value="/test/tiles/white.jsp" />
+	</definition>
+
+
+	<definition name="failed" extends="base">
+		<put-attribute name="title" value="Error de Logueo" />
+		<put-attribute name="body"
+			value="/test/pages/login/failed.jsp" />
+	</definition>
+
+
+
+	<definition name="errorAction" extends="base">
+		<put-attribute name="title" value="Error en la Petición" />
+		<put-attribute name="body"
+			value="/test/pages/error/error.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>

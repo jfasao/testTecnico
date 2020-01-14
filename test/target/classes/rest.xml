@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	 <package name="api" namespace="/api" extends="rest-default">
+	 		<interceptors>
+	 		 <interceptor name="json" class="org.apache.struts2.json.JSONInterceptor"/>
+	 			<interceptor-stack name="myStack">
+				    <interceptor-ref name="json"/>
+				    <interceptor-ref name="defaultStack"/>
+				</interceptor-stack>
+	 		</interceptors>
+	 
+			<action name="todo/*" class="testTecnico.rest.TodoController">
+				<interceptor-ref name="myStack" />
+ 				<param name="id">{1}</param> 
+ 				<param name="descripcion">{2}</param> 
+				<param name="estado">{3}</param> 
+				<param name="estadoId">{4}</param> 
+			</action>
+	</package>
+
+</struts>

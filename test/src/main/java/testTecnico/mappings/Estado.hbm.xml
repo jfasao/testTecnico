@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="testTecnico.model">
+	<class name="Estado" table="ESTADO" schema="TEST">
+		<id name="id" type="long">
+			<column name="ID" precision="4" scale="0" />
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="descripcion" type="java.lang.String">
+			<column name="DESCRIPCION" not-null="true" />
+		</property>
+
+
+	</class>
+</hibernate-mapping>

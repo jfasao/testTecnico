@@ -1,0 +1,90 @@
+.divmenu{
+	font-size:65%;
+}
+
+.contenedor{
+border: 1px solid #CCCCCC;
+background-color: #DFE6EF;
+padding-left: 4;
+padding-top: 4;
+}
+
+
+.cont_titulo{
+font: 90%  Verdana;
+font-weight: bold;
+color: #8D9FAB;
+}
+.cont_pie{
+font: 70%  Verdana;
+color: #798994;
+}
+.tableb{
+font: 80% Verdana;
+font-weight: bold;
+color: #666666;
+}
+
+.GrillaConsulta{
+	padding: 0px;
+	border: solid 1px #FFFFFF;
+color:#333333;
+}
+
+.GrillaConsulta td{
+	padding: 4 4;
+	border: solid 1px #FFFFFF;
+	font: 70% Verdana;
+	font-weight: bold;
+}
+
+
+.Grillaheader{
+	background-color: #7B93C1;
+	text-align: center;
+	color:#FFFFFF;
+	font-weight: bold;
+}
+
+
+
+
+
+
+/* INICIO ****************** DIV barra TOP*/
+.nav_top{
+padding: 27px 0 0 0;
+}
+/* FINAL ****************** DIV barra TOP */
+
+/* INICIO ****************** PAGINADOR */
+.paginador{
+padding: 2px;
+}
+.paginador td{
+	padding: 4 4;
+	font-size:80%;
+}
+
+.paginador select{
+	padding: 1 1;
+	font-size:70%;
+	BORDER: solid 1px;
+	BORDER-COLOR: #333333;
+	COLOR: #333333;
+	/*FONT-WEIGHT: bold;*/
+}
+
+.form_fieldset{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 80%;
+    width: 90%;
+	}
+
+.labeldata{
+font: 75% Verdana;
+color:#333333;
+background-color: #FFFFFF;
+}
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="testTecnico.model">
+    <class name="Documento" table="DOCUMENTO" schema="TEST">       
+       <id name="documentoId" type="long"  >
+            <column name="DOCUMENTO_ID"  precision="4" scale="0"  />
+            <generator class="increment">
+            </generator>
+        </id>
+        <property name="nombreDoc" type="java.lang.String"  >
+            <column name="NOMBRE_DOC"  not-null="true"/>
+        </property>    
+        <property name="contentType" type="java.lang.String"  >
+            <column name="CONTENT_TYPE"  not-null="true"/>
+        </property> 
+        <property name="comentario" type="java.lang.String"  >
+            <column name="COMENTARIO"  not-null="true"/>
+        </property> 
+		<property name="ruta" type="java.lang.String"  >
+            <column name="RUTA"  not-null="false"/>
+        </property>    
+          <property name="documento" type="blob"  lazy="true">
+            <column name="DOCUMENTO" />
+        </property>   
+<!--         <many-to-one name="todo" class="Todo"  fetch="join"  lazy="false" > -->
+<!--             		<column name="TODO_ID" not-null="false" /> -->
+<!--         </many-to-one>  -->
+      </class>
+</hibernate-mapping>

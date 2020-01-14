@@ -1,0 +1,110 @@
+
+b {
+	text-align: center;
+}
+	  
+.line01{background-image:url(altec/images/login/line01.gif);}
+.line02  {background-image:url(altec/images/login/line02.gif);}
+.line03 {background-image:url(altec/images/login/line03.gif);}
+.line04 {background-image:url(altec/images/login/line04.gif);}
+.line05 {background-image:url(altec/images/login/line05.gif);}
+.line06 {background-image:url(altec/images/login/line06.gif);}
+.line07 {background-image:url(altec/images/login/line07.gif);}
+.line08 {background-image:url(altec/images/login/line08.gif);}
+.bg1 {background-image:url(altec/images/login_02.gif);}
+.bg2{background-image:url(altec/images/login_03.gif);}
+.bgwhite {background-color:#FFFFFF;}
+div#text {
+	font-size: 12px;
+	color:#5D5D5D;
+	font-weight:bold;
+	font-family: verdana,arial,helvetica;
+	padding: 3px 0 3px;
+}
+div#text2 {
+	font-size: 12px;
+	color:#838383;
+	font-weight:bold;
+	font-family: verdana,arial,helvetica;
+	padding: 3px 0 3px;
+}
+
+/* START Login */
+.text {
+	font-size: 12px;
+	color:#6A6767;
+	font-weight:bold;
+	font-family: verdana,arial,helvetica;
+	padding: 7px 0px;
+}
+.button {
+	font-size: 12px;
+	color:#5A5656;
+	font-weight:bold;
+	font-family: verdana,arial,helvetica;
+}
+
+.exr{
+	background-image:url(../../images/login/exr.jpg);
+}
+.exl{
+	background-image:url(../../images/login/exl.jpg);
+}
+.exr_form{
+	background-image:url(../../images/login/exr_form.jpg);
+}
+.exl_form{
+	background-image:url(../../images/login/exl_form.jpg);
+}
+.exb_form{
+	background-image:url(../../images/login/exb_form.jpg);
+}
+.linet{
+	background-image:url(../../images/login/linet.jpg);
+}
+.lineb{
+	background-image:url(../../images/login/lineb.jpg);
+}
+.linel{
+	background-image:url(../../images/login/linel.jpg);
+}
+.liner{
+	background-image:url(../../images/login/liner.jpg);
+}
+.bgtab{
+	background-image:url(../../images/login/bgtab.jpg); 
+	color:#FFFFFF; 
+	font-size:16px; 
+	font-weight:bold; 
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	padding:0px 0px 0px 10px;
+}
+.bgform{
+	background-image:url(../../images/login/bgform.jpg); 
+	padding:0px 5px 0px 30px;
+}
+
+#cpcopyright{
+	font-family:Verdana, sans-serif;
+	font-size:10px;
+	text-align: center;
+	color:#FFFFFF;
+}
+
+#bot{
+display:none;
+}
+
+.login {
+ background-color:#616161;
+ color:#FFFFFF;
+ border:#FFFFFF 2px solid;
+ font-size:11px;
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ margin:10px;
+}
+
+.login tr td {
+	padding:3px 10px 3px 2px;
+}
+/* END Login */

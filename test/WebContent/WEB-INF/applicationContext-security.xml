@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd"> -->
+<beans>
+
+	<bean id="todoDao" parent="transactionProxyTemplate">
+		<property name="target">
+			<bean class="testTecnico.dao.hibernate.TodoDaoImp">
+				<property name="sessionFactory" ref="sessionFactory" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="estadoDao" parent="transactionProxyTemplate">
+		<property name="target">
+			<bean class="testTecnico.dao.hibernate.EstadoDaoImp">
+				<property name="sessionFactory" ref="sessionFactory" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<!-- Beans para Documentos-->
+	<bean id="documentoDao" parent="transactionProxyTemplate">
+		<property name="target">
+			<bean class="testTecnico.dao.hibernate.DocumentoDaoImp">
+				<property name="sessionFactory" ref="sessionFactory" />
+			</bean>
+		</property>
+	</bean> 
+	<!-- Fin de Beans para Documentos -->
+	
+	
+	<bean id="itestTecnicoManager"
+		parent="transactionProxyTemplate">
+		<property name="target">
+			<bean
+				class="testTecnico.service.dao.hibernate.TestTecnicoManagerImpl">
+
+				<property name="todoDao">
+					<ref bean="todoDao" />
+				</property>
+
+				<property name="estadoDao">
+					<ref bean="estadoDao" />
+				</property>
+
+				<property name="documentoDao">
+					<ref bean="documentoDao" />
+				</property> 
+			</bean>
+		</property>
+	</bean>
+</beans>
+
+ 

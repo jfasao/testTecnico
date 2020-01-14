@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- MenuDivRolFunction -->
+<struts>
+	<package name="interceptors" abstract="true"
+		extends="struts-default">
+		<result-types>
+			<result-type name="jasper"
+				class="jasperreports.JasperModifImpl" />
+		</result-types>
+		<interceptors>
+			<interceptor name="validate"
+				class="web.seguridad.actions.InterceptorValidateAction" />
+
+			<interceptor-stack name="seguridadtStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="store">
+					<param name="operationMode">STORE</param>
+				</interceptor-ref>
+				<interceptor-ref name="validate">
+					<param name="excludedActionNames">
+						RubricasPortalexecute.action,
+						saveRubricaPortal.action,
+						Empadronamientoexecute.action
+					</param>
+				</interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+
+
+		<default-interceptor-ref
+			name="seguridadtStack" />
+
+		<global-results>
+			<result name="juera" type="redirectAction">../seguridad/timeout.action</result>
+			<result name="recarga" type="redirectAction">../seguridad/recarga.action
+			</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="Exception" />
+			<exception-mapping
+				exception="java.lang.ClassNotFoundException" result="Exception" />
+			<exception-mapping
+				exception="java.lang.NullPointerException" result="Exception" />
+		</global-exception-mappings>
+
+	</package>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="true" />
+	<constant name="struts.objectFactory" value="spring" />
+
+
+	<include file="generic.xml" />
+	<include file="seguridad.xml" />
+
+
+
+
+</struts>

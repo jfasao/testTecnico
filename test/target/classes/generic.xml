@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="generic" namespace="/generic"
+		extends="interceptors">
+
+
+		<action name="*Action*" class="{1}Action" method="{2}">
+			<interceptor-ref name="seguridadtStack" />
+			<interceptor-ref name="store">
+				<param name="operationMode">RETRIEVE</param>
+			</interceptor-ref>
+			<result name="success">/test/pages/operation/{1}.jsp</result>
+		</action>
+
+
+
+		<action name="grillaTodo" class="TodoAction"
+			method="grilla">
+		</action>
+		<action name="grillaEstado" class="EstadoAction"
+			method="grilla">
+		</action>
+		
+		<action name="doComboEstado" class="TodoAction"
+			method="doComboEstado">
+		</action>
+		
+
+		<action name="printTodos"
+			class="ReporteTodoAction" method="print">
+			<interceptor-ref name="seguridadtStack" />
+			<interceptor-ref name="store">
+				<param name="operationMode">STORE</param>
+			</interceptor-ref>
+			<result name="success" type="jasper">
+				<param name="location">test/reports/todos.jasper</param>
+				<param name="dataSource">myList</param>
+				<param name="documentName">ReporteTareas</param>
+				<param name="customParameters">jasperParams</param>
+				<param name="type">value</param>
+			</result>
+		</action>
+
+	
+		<action name="uploadDocumentoTodo" class="TodoAction"
+			method="upload">
+		</action>
+		
+		<action name="downLoadDocumento" class="DocumentoAction" method="downLoad">
+		</action>
+		<action name="grillaByTodoDocumento" class="DocumentoAction" method="grillaByTodo">
+		</action>
+		
+	</package>
+
+
+
+</struts>
+

@@ -1,0 +1,157 @@
+
+
+ul#primary-nav,
+ul#primary-nav ul {
+    margin: 0;
+    padding: 0;
+    width: 150px; /* Width of Menu Items */
+    border-bottom: 1px solid #ccc;
+    background: #fff; /* IE6 Bug */
+    font-size: 100%;
+}
+
+ul#primary-nav li {
+    position: relative;
+    list-style: none;
+}
+
+ul#primary-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul#primary-nav li { float: left; height: 1%; }
+* html ul#primary-nav li a { height: 1%; }
+/* End */
+
+ul#primary-nav ul {
+    position: absolute;
+    display: none;
+    left: 149px; /* Set 1px less than menu width */
+    top: 0;
+}
+
+ul#primary-nav li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+
+ul#primary-nav li:hover ul ul,
+ul#primary-nav li:hover ul ul ul,
+ul#primary-nav li.over ul ul,
+ul#primary-nav li.over ul ul ul { display: none; } /* Hide sub-menus initially */
+
+ul#primary-nav li:hover ul,
+ul#primary-nav li li:hover ul,
+ul#primary-nav li li li:hover ul,
+ul#primary-nav li.over ul,
+ul#primary-nav li li.over ul,
+ul#primary-nav li li li.over ul { display: block; } /* The magic */
+
+ul#primary-nav li.menubar { background: transparent url(altec/images/menu/arrow.gif) right center no-repeat; }
+
+ul#primary-nav li:hover,
+ul#primary-nav li.over { background-color: #f9f9f9; }
+
+ul#primary-nav li a:hover { color: #E2144A; }
+
+/******************************Arriba************************************************/
+
+ul#primary-nav1,
+        ul#primary-nav1 ul {
+/*              background: #DAE0D2 url(../../images/menu/bg.gif) repeat-x bottom;*/
+              background: #f6f6f6 url("../../images/menu/td_bg.gif") no-repeat 100% 100%;
+            font-size: 95%;
+		  width:155px;
+		  line-height:normal;
+	  margin: 0 0 0 0;
+    	padding: 0 0 0 0;
+
+        }
+
+
+        ul#primary-nav1 {
+            float: left;
+            width: 100%;
+        }
+
+        ul#primary-nav1:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        ul#primary-nav1 li {
+            position: relative;
+            list-style: none;
+            float: left;
+            font-size: 100%;
+            width: 156px; /* Width of Menu Items */
+            white-space: nowrap;
+
+        }
+
+
+        ul#primary-nav1 li a,
+        ul#primary-nav1 li li a {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+         	padding: 4px;
+          border: 1px solid #f6f6f6;
+
+        }
+
+        /* Fix IE. Hide from IE Mac \*/
+        * html ul#primary-nav1 li { float: left; height: 1%; }
+        * html ul#primary-nav1 li a { height: 1%; }
+        /* End */
+
+        ul#primary-nav1 ul {
+            position: absolute;
+            display: none;
+        }
+
+        ul#primary-nav1 ul ul {
+            left: 155px;
+            top: 0;
+         
+           background: #f6f6f6 url("../../images/menu/td_bg.gif") right center no-repeat;
+
+        }
+
+        ul#primary-nav1 li ul li a { padding: 5px 4px;
+
+        							  } /* Sub Menu Styles */
+
+        ul#primary-nav1 li:hover ul ul,
+        ul#primary-nav1 li:hover ul ul ul,
+        ul#primary-nav1 li.over ul ul,
+        ul#primary-nav1 li.over ul ul ul { display: none; } /* Hide sub-menus initially */
+
+        ul#primary-nav1 li:hover ul,
+        ul#primary-nav1 li li:hover ul,
+        ul#primary-nav1 li li li:hover ul,
+        ul#primary-nav1 li.over ul,
+        ul#primary-nav1 li li.over ul,
+        ul#primary-nav1 li li li.over ul { display: block; } /* The magic */
+
+
+        ul#primary-nav1 li.menubar {background: #f6f6f6 url("../../images/menu/td_bg.gif") right center no-repeat;
+        							 z-index: 999;	 }
+        ul#primary-nav1 li li.menubar { background: #f6f6f6 url("../../images/menu/td_bg.gif") right center no-repeat;}
+        ul#primary-nav1 li:hover,
+       ul#primary-nav1 li.over {   background-color: #f9f9f9; color:#E2144A ;font-weight:bold;font-size: 102%;}
+        ul#primary-nav1 li a:hover {  border: 1px solid #cccccc;background-color: #f9f9f9;   color: #E2144A; font-weight:bold;font-size: 102%; }
+        
+
+/***************************** prueba****************************************************/
+
+
+
+
+

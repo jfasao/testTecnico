@@ -1,0 +1,498 @@
+
+#teclado{
+	font: 75% Verdana;
+	font-weight: bold;
+}
+
+body {font: verdana;}
+
+textarea{
+font: 75% Verdana;
+color:#333333;
+
+}
+
+label{
+font: 70% Verdana;
+color:#222222;
+}
+
+fieldset {
+  width: 80%;
+  border: 1px solid #999;
+  padding: 10px;
+}
+legend {
+  padding: 1px 4px;
+  border-color: #999 #ccc #ccc #999;
+  border-style: solid;
+  border-width: 1px;
+  background: #eee;
+}
+
+.labelBlanca{
+font: 70% Verdana;
+font-weight: bold;
+color:white;
+}
+
+p{
+	margin:1 5 1 5;
+}
+.pie{
+font: 60% Verdana;
+font-weight: bold;
+color:#e9e6e5;
+}
+.tablec{
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+
+.tablec label.checks{
+	font-family:sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	
+}
+.tablec label.texto{
+	font: 70% Verdana;
+	color:#222222;
+	}
+	
+
+.tablec td.divBorde{
+	border: 1px;
+	
+	
+}
+
+
+.tableBorde{
+	padding-top: 3px;	
+	padding-bottom: 3px;	
+	border: solid 2px #000000;
+}
+.tablec td{
+/*	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;*/
+}
+.tablec td.bottom{
+	/*border-bottom: 1px solid #FFFFFF;*/
+}
+
+.tablec td.right{
+/*	border-right: 1px solid #FFFFFF;*/
+}
+
+.tabled{
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	
+	
+}
+
+.tabled td{
+	border-top: 1px solid #333333;
+	}
+
+.tabled td.bottom{
+	border-bottom: 1px solid #333333;
+}
+.tabled td.right{
+	border-right: 1px solid #333333;
+}
+.tabled td.left{
+	border-left: 1px solid #333333;
+}
+
+
+.tableg td{
+	border-bottom: 1px solid #666666;
+	}
+/* ********************  logueo */
+
+.login_pass {
+	background: url('../images/login/candado_unlock.gif') no-repeat center left #FFFFFF;
+	padding-left: 17px;
+	border: 1px solid #666666;
+	width: 180px;
+
+}
+
+.login_username {
+	background: url('../images/login/usuario_habilitado.gif') no-repeat center left #FFFFFF;
+	padding-left: 15px;
+	border: 1px solid #666666;
+	width: 180px;
+
+
+}
+
+#passwordX {
+	background: url('../images/login/candado_unlock.gif') no-repeat center left #FFFFFF;
+	padding-left: 17px;
+	border: 1px solid #666666;
+	width: 180px;
+
+}
+
+
+/* FINAL ***************** imagenes logueo */
+
+.imputbuttom {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #f5f5f5;
+    color: #333333;
+    text-align:center;
+    cursor:pointer;
+    width: 95px;
+}
+.imputbuttomLarge {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #f5f5f5;
+    color: #333333;
+    text-align:center;
+    cursor:pointer;    
+}
+
+.imputsearch {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #ffffff;
+    color: #333333;
+}
+.imputDesable {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #cccccc;
+    color: #999999;
+}
+.MontoEditable {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    text-align:right;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #ffffff;
+    color: #333333;
+    width: 100%;
+}
+
+.fechaEditable {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    text-align:center;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #ffffff;
+    color: #333333;
+}
+.MontoNoEditable {
+     FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #eeeeee;
+    color: #333333;   
+    text-align:right;
+    width: 100%;   
+}
+
+.MontoNoEditableSinBg {
+     FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;   
+    BORDER: solid 0px; 
+    BORDER-COLOR: transparent;
+     BACKGROUND: transparent;    
+    color: #ffffff;   
+    text-align:right;   
+    width: 100%;
+}
+.MontoNoEditableSinBgBlack {
+     FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;   
+    BORDER: solid 0px; 
+    BORDER-COLOR: transparent;
+     BACKGROUND: transparent;    
+    color: #000000;   
+    text-align:right;   
+    width: 100%;
+}
+.MontoNoEditableSinBgMonto {
+     FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;   
+    BORDER: solid 0px; 
+    BORDER-COLOR: transparent;
+     BACKGROUND: transparent;    
+    color: #000000;   
+    text-align:left;   
+    width: 100%;
+}
+.cellgrid{
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #ffffff;
+    color: #333333;
+    width:120px;
+}
+
+.columnGridHeader {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #308dbb;
+    color: #f5f5f5;
+    text-align:center;
+    width:120px;
+
+    
+}
+
+.columnGridTotal {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #3b9383;
+    color: #f5f5f5;
+    text-align:right;
+    width:120px;
+
+    
+}
+
+.columnGridTotalGral {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: black;
+    color: #f5f5f5;
+    text-align:right;
+    width:120px;
+
+    
+}
+
+.rowdays {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #308dbb;
+    color: #f5f5f5;
+    text-align:center;
+ 
+}
+
+.imputsearchdisabled {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #eeeeee;
+    color: #333333;
+    text-align:left;
+
+}
+
+.imputsearchfull {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #ffffff;
+    color: #333333;
+    text-align:left;
+    width: 98%;
+
+}
+
+.matricula{
+	BORDER: solid 1px;
+    BORDER-COLOR: #333333;
+	}
+
+.select {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #f5f5f5;
+    color: #333333;
+    width:450px;
+    overflow: scroll;
+    text-align:left;
+    cursor:pointer;
+     
+}
+
+.select1  {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #f5f5f5;
+    color: #333333;
+    width:500px;
+    overflow: scroll;
+    text-align:left;
+    cursor:pointer;
+     
+}
+
+.select1 button {
+    color: #FF0000;
+     
+}
+
+.selectWithOutwidth {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #f5f5f5;
+    color: #333333;
+    text-align:left;
+    cursor:pointer;
+     
+}
+
+.divApp {
+	width: 65px;
+	height: 13px; 
+	}
+
+.selectWithOutwidth2 {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #f5f5f5;
+    color: #333333;
+    cursor:pointer;
+     
+}
+
+.tablec label{
+font: 80% Verdana;
+FONT-SIZE: 14px;
+FONT-WEIGHT: bold;
+color:#222222;
+}
+
+
+.comboFilter {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: #f5f5f5;
+    color: #333333;
+    text-align:left;
+    cursor:pointer;
+}
+.lectura{
+	width:100%;
+	background: #FFFFFF;
+	border:0;
+	}
+
+.divmenu{
+	font:70% Verdana, Arial, sans-serif;
+}
+
+.listboxStyle{
+	width: 250;
+	font:70% Verdana, Arial, sans-serif;
+}
+
+.days {
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold;
+    BORDER: solid 1px;
+    BORDER-COLOR: #636363;
+    BACKGROUND: silver;
+    color: #333333;
+    text-align:center;
+}
+
+#userCompaniesAssigned {
+    width: 400px;
+     FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+    ;
+ }
+
+ #userCompaniesNotAssigned {
+    width: 400px;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    FONT-SIZE: 11px;
+   
+ }
+ 
+ 
+ .buttonLogout{
+ 	FONT-FAMILY: Verdana, Arial, sans-serif;
+ 	FONT-SIZE: 11px;
+ 	FONT-WEIGHT: bold;
+ 	BORDER: solid 1px;
+ 	BORDER-COLOR: #636363;
+	BACKGROUND: #f5f5f5;
+	color: #333333;
+	text-align:center;
+	cursor:pointer;
+	width: 55px;
+ }
+ 
+ #TablaLogin{
+
+	background-color:#E4E4E4;
+	text-align:center;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 10px;
+	color: black;
+	
+
+}

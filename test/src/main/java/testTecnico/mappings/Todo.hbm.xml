@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="testTecnico.model">
+	<class name="Todo" table="TODO" schema="TEST">
+		<id name="id" type="long">
+			<column name="ID" precision="4" scale="0" />
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="descripcion" type="java.lang.String">
+			<column name="DESCRIPCION" not-null="true" />
+		</property>
+		<many-to-one name="estado" class="Estado" fetch="join"
+			lazy="proxy">
+			<column name="ESTADO_ID" not-null="false" />
+		</many-to-one>
+		
+        <bag name="documentos" cascade="all-delete-orphan" lazy="extra"  inverse="false"  >
+            <key>
+                <column name="TODO_ID"   />
+            </key>
+            <one-to-many   class="Documento"  />
+        </bag>
+	
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+.select-free
+{
+	position:absolute;
+	z-index:10;/*any value*/
+	overflow:hidden;/*must have*/
+	width:33em;/*must have for any value*/;
+	
+	
+
+}
+.select-free iframe
+{
+	display:none;/*sorry for IE5*/
+	display/**/:block;/*sorry for IE5*/
+	position:absolute;/*must have*/
+	top:0;/*must have*/
+	left:0;/*must have*/
+	z-index:-1;/*must have*/
+	filter:mask();/*must have*/
+	width:3000px;/*must have for any big value*/
+	height:3000px/*must have for any big value*/;
+}
+
+.select-free .bd{border:solid 1px #aaaaaa;padding:12px;}
+	#dd3{width:22em;
+		 background:#b8d6e6;
+		 visibility: hidden;
+		}

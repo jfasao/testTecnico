@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="seguridad" namespace="/seguridad"
+		extends="tiles-default">
+		<action name="start" method="setVersion"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<result name="success" type="tiles">entrada</result>
+		</action>
+
+		<action name="initlogin" method="initlogin"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<result>../test/pages/login/loginc.jsp</result>
+		</action>
+
+		<action name="changePassw">
+			<result>../test/pages/login/changePass.jsp</result>
+		</action>
+
+		<action name="loadMenu" method="loadMenu"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<result name="success" type="tiles">entrada</result>
+			<result type="tiles" name="failed">notRolActive</result>
+			<result name="changePassword" type="redirectAction">resetPasswordLogin</result>
+		</action>
+		<action name="login" method="logon"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<result name="logging" type="redirectAction">loadMenu.action</result>
+			<result type="tiles" name="failed">failed</result>
+			<result type="tiles" name="unabled">unabled</result>
+		</action>
+
+		<action name="timeout"
+			class="testTecnico.actions.TimeOutAction" method="timeout">
+			<result name="success">../test/pages/operation/logout.jsp</result>
+		</action>
+
+		<action name="logout" method="logout"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<interceptor-ref name="basicStack" />
+			<interceptor-ref name="store">
+				<param name="operationMode">RETRIEVE</param>
+			</interceptor-ref>
+			<result type="tiles">entrada</result>
+		</action>
+
+		<action name="changeApplication" method="changeApplication"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<result type="tiles">entrada</result>
+			<result type="redirectAction" name="failed">logout</result>
+		</action>
+		<action name="resetPassword" method="reset"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<result>../test/pages/login/setNewClave.jsp</result>
+		</action>
+
+		<action name="resetPasswordLogin" method="reset"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<result name="success" type="tiles">changePassword</result>
+		</action>
+
+		<action name="changePass" method="changePass"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+		</action>
+
+
+		<action name="changePassword" method="changePassword"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+			<interceptor-ref name="basicStack" />
+			<interceptor-ref name="store">
+				<param name="operationMode">STORE</param>
+			</interceptor-ref>
+			<result type="redirectAction">logout</result>
+			<result type="tiles" name="failed">changePassword</result>
+		</action>
+
+
+		<action name="doApplicationByUsers"
+			method="doApplicationByUsers"
+			class="testTecnico.web.seguridad.actions.AdministratorAction">
+		</action>
+	</package>
+
+</struts>
