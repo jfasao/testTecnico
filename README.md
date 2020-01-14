@@ -20,6 +20,7 @@ Para el desarrollo se utilizaron las siguientes tecnologias:
       EXTJS 3
       STRUTS2-REST-PLUGIN 2.3.34 (EXPORTAR API REST)
       MAVEN4
+      JASPERREPORTS 3.0
 
 
 Configuraciones
@@ -57,7 +58,19 @@ se ingresa con el usuario:falcalde
  La Api Rest corre en la url: http://localhost:8080/test/api/todo/
  
  Se publicaron servicios GET, pudieno filtrar por id, descripcion y estado (descripcion) usando query params
- tambien se publico metodo PUT aceptando datos por query params, como por json en el body del request, se deben setear el content-Type aplication/json, acepta parametros descripcion, estadoId.
+ 
+  Metodo POST aceptando datos por query params, como por json en el body del request, se deben setear el content-Type aplication/json, acepta parametros id, descripcion, estadoId.
+  
+ Tambien se publico metodo PUT aceptando datos por query params, como por json en el body del request, se deben setear el content-Type aplication/json, acepta parametros id, descripcion, estadoId.
+ 
+ Metodo DELETE, se debe indicar el id a eliminar.
+ 
+ Se realizo reporte que imprime el listado de Todos, solo para mostrar la posibilidad de usar jasperreports, herramienta muy facil de operar para reportes a cualquier formato (html, excel, word, etc)
+ 
+ 
+ 
+ 
+
  
  
  
